@@ -1,22 +1,34 @@
-require('babel-register');
-require('babel-polyfill');
-
+npm install @truffle/ropsten.infura.io/ws/v3/4b6f463c8f9e46abbe9ad02c94cc31
+const HDWalletProvider = require("https://ropsten.infura.io/ws/v3/4b6f463c8f9e46abbe9ad02c94cc31");
+const HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/<INFURA_PROJECT_ID>", 2); 
 module.exports = {
-  networks: {
-    development: {
-      host: "127.0.0.1",
-      port: 7545,
-      network_id: "*" // Match any network id
-    },
-  },
-  contracts_directory: './src/contracts/',
-  contracts_build_directory: './src/abis/',
-  compilers: {
-    solc: {
-      optimizer: {
-        enabled: true,
-        runs: 200
-      }
+  networks: {;
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/ws/v3/4b6f463c8f9e46abbe9ad02c94cc31>")
+      },
+      network_id: 3
     }
+  }
+};
+truffle compile
+truffle migrate --network ropsten
+import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
+
+contract MyContract {
+  ISwapRouter router;
+
+  function doSomethingWithSwapRouter() {
+    // router.exactInput(...);
+  }
+}
+
+import '@uniswap/v3-periphery/contracts/interfaces/ISwapRouter.sol';
+
+contract MyContract {
+  ISwapRouter router;
+
+  function doSomethingWithSwapRouter() {
+    // router.exactInput(...);
   }
 }
