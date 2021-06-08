@@ -1,43 +1,46 @@
 {
-    "errors": [
-        {
-            "component": "general",
-            "errorCode": "1878",
-            "formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol\n\n",
-            "message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
-            "severity": "warning",
-            "sourceLocation": {
-                "end": -1,
-                "file": "c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol",
-                "start": -1
-            },
-            "type": "Warning"
-        },
-        {
-            "component": "general",
-            "errorCode": "3420",
-            "formattedMessage": "Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.4;\"\n--> c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol\n\n",
-            "message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.8.4;\"",
-            "severity": "warning",
-            "sourceLocation": {
-                "end": -1,
-                "file": "c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol",
-                "start": -1
-            },
-            "type": "Warning"
-        }
-    ],
-    "sources": {
-        "c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol": {
-            "ast": {
-                "absolutePath": "c:/Users/DELL/Downloads/BlackDiamond-SC-Blockchain-master/.devcontainer/BlackDiamond SC 2.sol",
-                "exportedSymbols": {},
-                "id": 1,
-                "nodeType": "SourceUnit",
-                "nodes": [],
-                "src": "0:0:0"
-            },
-            "id": 0
-        }
-    }
+  "name": "eth-marketplace",
+  "version": "0.1.0",
+  "description": "An Ethereum Marketplace",
+  "author": "gregory@dappuniversity.com",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "babel-polyfill": "6.26.0",
+    "babel-preset-env": "1.7.0",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "babel-preset-stage-3": "6.24.1",
+    "babel-register": "6.26.0",
+    "bootstrap": "4.3.1",
+    "chai": "3.5.0",
+    "chai-as-promised": "7.1.1",
+    "chai-bignumber": "3.0.0",
+    "graphql": "^15.3.0",
+    "graphql-tag": "^2.11.0",
+    "react": "16.8.4",
+    "react-apollo": "^3.1.5",
+    "react-bootstrap": "1.0.0-beta.5",
+    "react-dom": "16.8.4",
+    "react-scripts": "4.0.0",
+    "truffle": "5.0.5",
+    "web3": "1.0.0-beta.55"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
 }
